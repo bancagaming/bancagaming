@@ -15,7 +15,7 @@ Q.inherit(Cannon, Q.MovieClip);
 Cannon.prototype.setPower = function(power, increase)
 {	
 	if(increase) power += this.power;
-	power = power > 7 ? 1 : power < 1 ? 7 : power;	
+	power = 100;	
 	if(this.power == power) return;
 	
 	this.power = power;
